@@ -1,0 +1,39 @@
+{
+    "name": "kdubuc/scaleway-container-auth-psr15",
+    "description": "PSR15 Scaleway Container Authentication Middleware",
+    "keywords": [
+      "psr15",
+      "psr7",
+      "scaleway",
+      "container",
+      "auth"
+    ],
+    "homepage": "https://github.com/kdubuc/scaleway-container-auth-psr15",
+    "license": "CECILL-2.1",
+    "authors": [
+      {
+        "role": "Developer",
+        "name": "Kevin DUBUC",
+        "email": "kevindubuc62@gmail.com",
+        "homepage": "http://kevindubuc.fr"
+      }
+    ],
+    "require": {
+      "php": "^7.1 || ^8.0",
+      "psr/http-server-middleware": "^1.0",
+      "firebase/php-jwt": "^6.2",
+      "phpseclib/phpseclib": "^3.0"
+    },
+    "require-dev": {
+      "kdubuc/php-cs-fixer-rules": "^1.0",
+      "guzzlehttp/psr7": "^2.2.1",
+      "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Kdubuc\\Middleware\\": "src/"
+      }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+  }
