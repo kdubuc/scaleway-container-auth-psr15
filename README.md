@@ -17,7 +17,7 @@ $ composer require kdubuc/scaleway-container-auth-psr15
 ```php
 $middleware =  new ScalewayContainerAuthMiddleware([
     'auth_header_name'  => 'Scaleway-Auth-Token', // header which containing auth token (default : Scaleway-Auth-Token)
-    'auth_header_regex' => self::JWT_REGEX, // regex to catch token in header (default : [jwt])
+    'auth_header_regex' => ScalewayContainerAuthMiddleware::JWT_REGEX, // regex to catch token in header (default : [jwt])
     'env' => [], // to override environment variables (for testing purpose)
 ]);
 ```
