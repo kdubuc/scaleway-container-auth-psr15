@@ -121,8 +121,6 @@ final class ScalewayContainerAuth implements MiddlewareInterface
             JWT::$leeway   = 60; // Add extra leeway time while checking nbf, iat and expiration times
             $decoded_token = (array) JWT::decode($token, new Key($public_key, 'RS256'));
         } catch (Exception $e) {
-            print_r(error_get_last());
-            echo openssl_error_string();
             throw new ScalewayContainerAuthException($e->getMessage(), ScalewayContainerAuthException::JWT_INVALID);
         }
 
