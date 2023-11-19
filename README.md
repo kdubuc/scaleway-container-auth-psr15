@@ -1,5 +1,7 @@
 # Scaleway Container Authentication PSR-15 Middleware
 
+> Deprecation notice : Scaleway Container Authentication has been deprecated because the authorization process is built-in now.
+
 Private Scaleway Containers allows you to restrict access to them which prevents unauthorized access. Contrary to private functions where the authorization process is built-in, it needs to be configured inside the container. (see https://www.scaleway.com/en/docs/compute/containers/api-cli/restricting-access-to-a-container)
 
 This PSR15 Middleware provide runtime token validation to manage authentication access to the Scaleway Container.
